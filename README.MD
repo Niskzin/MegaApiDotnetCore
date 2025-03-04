@@ -1,7 +1,7 @@
 <h1 align="center">
   <br />
   <img
-    src="./_docs/assets/icon.png"
+    src="https://imgur.com/a/WeicCln"
     alt="Star Wars Planets API"
     width="150"
   />

@@ -2,42 +2,39 @@
   <br />
   <img
     src="./_docs/assets/icon.png"
-    alt="Mega Man Robots API"
+    alt="Star Wars Planets API"
     width="150"
   />
   <br />
-  <b>Mega Man Robots API</b>
+  <b>Star Wars Planets API</b>
   <br />
   <sub
-    ><sup><b>(MEGA-MAN-ROBOTS)</b></sup></sub
+    ><sup><b>(STAR-WARS-PLANETS)</b></sup></sub
   >
   <br />
   <a
-    href="https://github.com/felipeAguiarCode/MegaApiDotnetCore/actions/workflows/build.yml"
+    href="https://github.com/Niskzin/StarWarsPlanetsAPI/actions/workflows/build.yml"
   >
     <img
-      src="https://github.com/felipeAguiarCode/MegaApiDotnetCore/actions/workflows/build.yml/badge.svg"
+      src="https://github.com/Niskzin/StarWarsPlanetsAPI/actions/workflows/build.yml/badge.svg"
       alt=""
     />
   </a>
-  <a href="https://github.com/felipeAguiarCode/MegaApiDotnetCore/releases/latest">
+  <a href="https://github.com/Niskzin/StarWarsPlanetsAPI/releases/latest">
     <img
-      src="https://img.shields.io/github/v/release/felipeAguiarCode/MegaApiDotnetCore"
+      src="https://img.shields.io/github/v/release/yourUsername/StarWarsPlanetsAPI"
       alt="Latest Release"
     />
   </a>
 </h1>
 
 <p align="center">
-  This .NET Core API is designed to serve JSON formatted data about bosses from
-  the Mega Man series. It is a backend service built with .NET Core 3.1 and
-  various modern dependencies for data management and API response handling.
+  This .NET Core API provides JSON data about planets from the Star Wars universe. Built with .NET Core 3.1, it utilizes modern technologies for data management and API responses.
   <br />
 </p>
 
 <p align="center">
-  Developed with Entity Framework Core and other modern .NET technologies, this
-  project aims to provide a robust API for accessing Mega Man robot data.
+  Developed using Entity Framework Core and other contemporary .NET tools, this project aims to offer a reliable API for accessing Star Wars planet information.
   <br />
 </p>
 
@@ -56,18 +53,18 @@
   </tr>
   <tr>
     <td>GET</td>
-    <td>/api/v1/robots</td>
-    <td>Returns a list of all robots</td>
+    <td>/api/v1/planets</td>
+    <td>Returns a list of all planets</td>
   </tr>
   <tr>
     <td>GET</td>
-    <td>/api/v1/robots/{id}</td>
-    <td>Returns details of a specific robot by ID</td>
+    <td>/api/v1/planets/{id}</td>
+    <td>Returns details of a specific planet by ID</td>
   </tr>
   <tr>
     <td>POST</td>
-    <td>/api/v1/robots</td>
-    <td>Endpoint to create a new robot entry</td>
+    <td>/api/v1/planets</td>
+    <td>Endpoint to create a new planet entry</td>
   </tr>
 </table>
 
@@ -75,10 +72,8 @@
 
 <p align="center">
   - <b>Entity Framework Core:</b> ORM for data management.<br />
-  - <b>RESTful API Design:</b> Ensures clear and effective communication
-  endpoints.<br />
-  - <b>Dependency Injection:</b> Used throughout to promote loose coupling and
-  enhanced testability.<br />
+  - <b>RESTful API Design:</b> Ensures clear and effective communication endpoints.<br />
+  - <b>Dependency Injection:</b> Promotes loose coupling and enhanced testability.<br />
 </p>
 
 ## Dependencies
@@ -93,30 +88,21 @@
     <td>Microsoft.EntityFrameworkCore</td>
     <td>3.1.8</td>
     <td>
-      <a
-        href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/3.1.8"
-        >NuGet</a
-      >
+      <a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/3.1.8">NuGet</a>
     </td>
   </tr>
   <tr>
     <td>Microsoft.EntityFrameworkCore.Design</td>
     <td>3.1.8</td>
     <td>
-      <a
-        href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/3.1.8"
-        >NuGet</a
-      >
+      <a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/3.1.8">NuGet</a>
     </td>
   </tr>
   <tr>
     <td>Microsoft.EntityFrameworkCore.SqlServer</td>
     <td>3.1.8</td>
     <td>
-      <a
-        href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/3.1.8"
-        >NuGet</a
-      >
+      <a href="https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/3.1.8">NuGet</a>
     </td>
   </tr>
   <tr>
@@ -135,16 +121,10 @@ src
 ├── 📂 Controllers      [Routes for endpoints]
 ├── 📂 Models           [Database models]
 ├── 📂 Services         [Business rules]
-├── 📂 Middlewares      [Intermediate functions between the HTTP request and the final server response]
-├── 📂 Database         [Structures related to the database]
-│   ├── 📂 DTOs             [Input Models and View Models (Data Transfer Objects)]
-│   ├── 📂 EntityFramework  [Files related to the ORM Entity Framework]
+├── 📂 Middlewares      [Intermediate functions]
+├── 📂 Database         [Database related structures]
+│   ├── 📂 DTOs             [Data Transfer Objects]
+│   ├── 📂 EntityFramework  [Entity Framework files]
 │   │     ├── 📂 Context         [Entity context settings]
-│   │     ├── 📂 Migrations      [Migrations for database updates]
+│   │     ├── 📂 Migrations      [Database migrations]
 │   ├── 📂 Repositories     [Repository pattern]
-```
-
-## License This software is licensed under the terms of the [MIT]
-
-⌨️ FelipeAguiar -
-[Github](https://github.com/felipeAguiarCode)
